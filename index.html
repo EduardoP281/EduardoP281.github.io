@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 2 - Introduccion a PHP</title>
+    <link rel="stylesheet" href="/css/styles.css" >
+</head>
+<body>
+    <header>
+    </header>
+    <main>
+        <h1>Bienvenido al Laboratorio 2 de PHP</h1>
+        <p>Este laboratorio se centra en la introducción a PHP y sus conceptos básicos.</p>
+        <h4>If</h4>
+        <p>El IF es una estructura que te permite ejecutar una parte del codigo a la cual se le da 
+            una condicion, si esta cumple la condicion podra ejecutar el codigo que este dentro del If.
+        </p>
+        <pre>
+&lt;?php
+$t = 14;
+    if ($t < 20) {
+        echo "14 es menor que 20, por lo tanto se ejecuta el codigo dentro del IF";
+    }
+?&gt;
+
+        </pre>
+        <br>
+        <h4>Switch</h4>
+        <p>
+            Es una estructura de control que permite ejecutar uno de diferentes bloques de código.
+        </p>
+        <pre>
+&lt;?php
+$colorfav = "rosa";
+
+switch ($colorfav) {
+  case "rosa":
+    echo "Tu color favorito es el rosa, un capo";
+    break;
+  case "azul":
+    echo "Tu color favorito es el azul, tienes buenos gustos";
+    break;
+  case "verde":
+    echo "Tu color favorito es el verde? Ahora somos hermanos";
+    break;
+  default:
+    echo "No te gusta la vida pq no te gustan los mejores colores >:(";
+}
+?&gt;
+
+</pre>
+        <br>
+        <h4>While</h4>
+        <p>Un bucle que ejecuta el código por el rango especificado mientras que sea verdadero.</p>
+        <pre>
+&lt;?php  
+$i = 1;
+
+while ($i < 6) {
+  echo $i;
+  $i++;
+} 
+?&gt;  
+
+        </pre>
+        <h4>For</h4>
+        <p>Usado para cuando sabes o necesitas una cantidad especifica preestablecida para un bucle.</p>
+        <pre>
+&lt;?php
+for ($x = 0; $x <= 10; $x++) {
+  echo "El numero es: $x <br>";
+}
+?&gt;
+
+        </pre>
+        <h4>Foreach</h4>
+        <p>Metodo que se utiliza para crear un bucle usado normalmente en arrays</p>
+        <pre>
+&lt;?php
+$colores = array("rosa", "verde", "azul", "amarillo"); 
+
+foreach ($colores as $y) {
+  echo "$y <br>";
+}
+?&gt;  
+    </main>  
+    
+    <footer>
+        <p>&copy; 2025 Laboratorio 2 - U20220705 & U20220373</p>
+    </footer>
+
+    
+
+
+</body>
+</html>
