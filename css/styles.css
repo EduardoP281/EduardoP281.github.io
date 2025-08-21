@@ -1,0 +1,87 @@
+    :root{
+      /* colores principales */
+      --bg-deep: #0f1226;
+      --grad-a:  #4f46e5;
+      --grad-b:  #ef4db6;
+      --paper:   #ffffff;
+      --ink:     #0c1530;
+      --muted:   #5b657a;
+      --soft:    #f6f8ff;
+
+      /* colores por sección */
+      --if-accent:      #22c55e;
+      --switch-accent:  #f59e0b;
+      --while-accent:   #06b6d4;
+      --for-accent:     #a855f7;
+      --foreach-accent: #ef4444;
+
+      /* colores para bloques de código */
+      --code-bg:  #0b1020;
+      --code-ink: #e6f3ff;
+    }
+
+    *{scroll-behavior:smooth}
+    body{ background: linear-gradient(180deg, #f9fbff, var(--soft)); color: var(--ink); }
+    .navbar{ background: var(--bg-deep)!important; }
+    .navbar-brand span{ 
+      background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .nav-link{ color:#dbe2ff!important; }
+    .nav-link:hover{ color:#ffffff!important; }
+
+    .hero{
+      background: radial-gradient(1200px 520px at 10% -10%, #eef1ff, #f8f9ff);
+      border-bottom: 1px solid #e8ecf7;
+    }
+
+    .code-card{
+      background: var(--paper);
+      border: 1px solid #e6ecf2;
+      border-radius: 14px;
+      box-shadow: 0 10px 28px rgba(12,21,48,.07);
+    }
+    .card-header{
+      background: linear-gradient(135deg, #ffffff, #f7f7ff);
+      border-bottom: 1px solid #eceef7;
+    }
+    .card-header h3{ margin:0; font-size: 1.25rem; }
+
+    pre{
+      background: var(--code-bg);
+      color: var(--code-ink);
+      padding: 14px 16px;
+      border-radius: 10px;
+      overflow:auto;
+      font-size: .95rem;
+      line-height: 1.45;
+      border: 1px solid rgba(255,255,255,.08);
+      margin-bottom: 0;
+    }
+    .expected{
+      background: #f3fbff;
+      border-left: 4px solid var(--grad-b);
+      padding: 10px 12px;
+      border-radius: 8px;
+      margin-top: 12px;
+    }
+
+    /* bordes por sección */
+    .theme-if      { border-left: 6px solid var(--if-accent); }
+    .theme-switch  { border-left: 6px solid var(--switch-accent); }
+    .theme-while   { border-left: 6px solid var(--while-accent); }
+    .theme-for     { border-left: 6px solid var(--for-accent); }
+    .theme-foreach { border-left: 6px solid var(--foreach-accent); }
+
+    /* chips con color */
+    .chip{ display:inline-block; padding:.2rem .55rem; border-radius:999px; font-size:.8rem; color:#06202a; }
+    .chip-if      { background: color-mix(in srgb, var(--if-accent) 25%, white); }
+    .chip-switch  { background: color-mix(in srgb, var(--switch-accent) 25%, white); }
+    .chip-while   { background: color-mix(in srgb, var(--while-accent) 25%, white); }
+    .chip-for     { background: color-mix(in srgb, var(--for-accent) 25%, white); }
+    .chip-foreach { background: color-mix(in srgb, var(--foreach-accent) 25%, white); }
+
+    footer{
+      background: var(--bg-deep);
+      color: #cdd6f7;
+    }
